@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCC Gov HR &amp; Youth Summit 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="scroll-animation"></canvas>
+
+    <section class="banner">
+        <div class="page">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="assets/logo-mark-white.png" alt="GCC Gov HR & Youth Summit" />
+                </a>
+
+                <div class="nav-center">
+                    <a href="#" class="lang-switch">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <circle cx="12" cy="12" r="9" />
+                            <path
+                                d="M3 12h18M12 3c2.5 2.6 3.8 5.8 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.8-3.8-9s1.3-6.4 3.8-9z" />
+                        </svg>
+                        العربية
+                    </a>
+
+                    <div class="nav-links">
+                        <a href="#about" class="has-caret">About</a>
+                        <a href="#speakers">Speakers</a>
+                        <a href="#agenda">Agenda</a>
+                        <a href="#awards">Awards</a>
+                        <a href="#delegates" class="has-caret">Delegates</a>
+                        <a href="#sponsors" class="has-caret">Sponsors</a>
+                        <a href="#media">Media</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                    <span class="contact-text">Contact Us</span>
+                    <a href="#contact" class="nav-arrow" aria-label="Contact us">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="banner-center">
+            <img class="lockup" src="assets/logo-full-white.png"
+                alt="GCC Gov HR & Youth Summit, 14th Annual, Connecting People With Purpose" />
+
+            <p class="event-date">20<sup>th</sup> - 21<sup>st</sup> October 2026</p>
+            <p class="event-venue">
+                Grand Hyatt Abu Dhabi Hotel &amp;<br />
+                Residences Emirates Pearl, UAE
+            </p>
+        </div>
+
+        <div class="banner-taglines">
+            <div class="tagline">
+                <span class="tagline-small">Human Potential</span>
+                <span class="tagline-big">Unleashed</span>
+            </div>
+            <div class="tagline">
+                <span class="tagline-small">GCC Gov HR &amp;</span>
+                <span class="tagline-big">Youth Summit</span>
+            </div>
+            <div class="tagline">
+                <span class="tagline-small">Shaping Future</span>
+                <span class="tagline-big">Nations</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="page about-inner">
+            <span class="eyebrow">About the Summit</span>
+            <h2 class="section-heading">Where People &amp; Policy Come Together.</h2>
+
+            <div class="about-copy">
+                <p>
+                    The Government HR Summit brings together influential voices from
+                    across the public sector to discuss how people, technology,
+                    leadership, and progressive HR practices can shape the future of
+                    governance.
+                </p>
+                <p>
+                    From talent development and employee engagement to digital
+                    transformation and future-ready skills, the summit provides a
+                    space to exchange ideas, share experiences, and build meaningful
+                    connections.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="themes" id="themes">
+        <div class="page">
+            <span class="eyebrow">Key Themes</span>
+            <h2 class="section-heading">What's Driving the Future of Government HR</h2>
+
+            <div class="theme-grid">
+                <div class="theme-card">
+                    <span class="theme-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" />
+                            <circle cx="10" cy="7" r="4" />
+                            <path d="M22 20v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </span>
+                    <h3 class="theme-title">Future-Ready Workforce</h3>
+                    <p class="theme-desc">
+                        Building agile teams equipped for the evolving demands of
+                        public service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+        <div class="page">
+            <span class="eyebrow">Speakers &amp; Leaders</span>
+            <h2 class="section-heading">Ideas From Those Shaping Change</h2>
+            <p class="speakers-copy">
+                Hear from senior government officials, HR leaders, policymakers,
+                industry experts, and thought leaders who are redefining the
+                future of public-sector workforce management.
+            </p>
+        </div>
+    </section>
+
+    <section class="footer-cta">
+        <div class="page footer-cta-inner">
+            <p class="footer-cta-text">Register today and be part of the conversation.</p>
+            <div class="footer-cta-buttons">
+                <a href="#" class="btn btn-solid" id="register-btn">Register for the Summit</a>
+                <a href="#" class="btn btn-outline" id="view-agenda-btn">View Agenda</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const canvas = document.getElementById('scroll-animation');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const frameCount = 184;
+        const currentFrame = index => (
+            `ezgif-2590055de6763d47-jpg/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`
+        );
+
+        const images = [];
+
+        function render(image) {
+            if (!image || !image.complete || image.naturalWidth === 0) return;
+            const hRatio = canvas.width / image.width;
+            const vRatio = canvas.height / image.height;
+            const ratio = Math.max(hRatio, vRatio);
+            const centerShift_x = (canvas.width - image.width * ratio) / 2;
+            const centerShift_y = (canvas.height - image.height * ratio) / 2;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(image, 0, 0, image.width, image.height,
+                centerShift_x, centerShift_y, image.width * ratio, image.height * ratio);
+        }
+
+        const img = new Image();
+        img.src = currentFrame(1);
+        img.onload = function () {
+            render(img);
+        };
+
+        const updateImage = index => {
+            if (images[index] && images[index].complete) {
+                render(images[index]);
+            } else if (images[index]) {
+                images[index].onload = () => render(images[index]);
+            }
+        };
+
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const html = document.documentElement;
+                    const scrollTop = html.scrollTop || document.body.scrollTop;
+                    const maxScrollTop = html.scrollHeight - window.innerHeight;
+
+                    let scrollFraction = 0;
+                    if (maxScrollTop > 0) {
+                        scrollFraction = scrollTop / maxScrollTop;
+                    }
+
+                    const frameIndex = Math.min(
+                        frameCount - 1,
+                        Math.max(0, Math.floor(scrollFraction * frameCount))
+                    );
+
+                    updateImage(frameIndex + 1);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        const preloadImages = () => {
+            for (let i = 1; i <= frameCount; i++) {
+                const im = new Image();
+                im.src = currentFrame(i);
+                images[i] = im;
+            }
+        };
+
+        preloadImages();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const html = document.documentElement;
+            const scrollTop = html.scrollTop || document.body.scrollTop;
+            const maxScrollTop = html.scrollHeight - window.innerHeight;
+            const scrollFraction = maxScrollTop > 0 ? (scrollTop / maxScrollTop) : 0;
+            const frameIndex = Math.min(frameCount - 1, Math.max(0, Math.floor(scrollFraction * frameCount)));
+
+            if (images[frameIndex + 1]) {
+                render(images[frameIndex + 1]);
+            }
+        });
+    </script>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="registration-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="close-modal" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="modal-left"></div>
+            <div class="modal-right">
+                <h2 class="modal-title">Join the 2026 GOV HR Summit</h2>
+                <ul class="modal-benefits">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Network with global leaders
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Learn from industry experts
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Discover future HR strategies
+                    </li>
+                </ul>
+                <form class="modal-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" placeholder="HR Director" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Secure My Spot</button>
+                </form>
+                <div class="trust-signals">
+                    <div class="stars">
+                        <svg viewBox="0 0 24 24" fill="#FBBF24" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBF24" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBF24" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBF24" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBF24" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <span>Join 5,000+ industry leaders</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agenda Modal -->
+    <div class="modal-overlay" id="agenda-modal">
+        <div class="modal-container agenda-container">
+            <button class="modal-close" id="close-agenda" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="agenda-content">
+                <div class="agenda-header sticky">
+                    <h2 class="modal-title">GOV HR Summit Agenda: 20-21 October 2026</h2>
+                    <div class="agenda-controls">
+                        <div class="agenda-tabs">
+                            <button class="tab-btn active" data-day="day-1">Day 1 (Oct 20)</button>
+                            <button class="tab-btn" data-day="day-2">Day 2 (Oct 21)</button>
+                        </div>
+                        <input type="text" id="agenda-search" placeholder="Search sessions..." class="agenda-search">
+                    </div>
+                    <div class="agenda-filters">
+                        <button class="filter-btn active" data-filter="all">All Tracks</button>
+                        <button class="filter-btn" data-filter="keynote">🎙️ Keynotes</button>
+                        <button class="filter-btn" data-filter="workshop">🛠️ Workshops</button>
+                        <button class="filter-btn" data-filter="networking">☕ Networking</button>
+                    </div>
+                    <div class="live-progress">
+                        <div class="live-progress-bar" style="width: 35%;"></div>
+                    </div>
+                </div>
+                
+                <div class="agenda-body">
+                    <!-- Day 1 Sessions -->
+                    <div class="agenda-day active" id="day-1">
+                        <!-- Keynote -->
+                        <div class="agenda-row keynote" data-track="keynote">
+                            <div class="agenda-time">09:00 AM – 10:00 AM</div>
+                            <div class="agenda-details">
+                                <span class="featured-badge">Featured Keynote</span>
+                                <h3 class="session-title">The Future of Public Sector Workforce Management</h3>
+                                <p class="session-desc">Discover the strategic vision for shaping HR policies to meet the evolving demands of modern governance and digital transformation.</p>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar">A</div>
+                                    <span class="speaker-name">Dr. Ahmed Al-Mansoori, Director General at Govt HR</span>
+                                </div>
+                            </div>
+                            <button class="calendar-btn" title="Add to Calendar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><line x1="12" y1="14" x2="12" y2="18"></line><line x1="10" y1="16" x2="14" y2="16"></line></svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Workshop -->
+                        <div class="agenda-row" data-track="workshop">
+                            <div class="agenda-time">10:30 AM – 12:00 PM</div>
+                            <div class="agenda-details">
+                                <h3 class="session-title">Building Agile Teams: A Hands-On Workshop</h3>
+                                <p class="session-desc">Learn actionable frameworks for developing cross-functional, highly responsive teams within government departments.</p>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar">S</div>
+                                    <span class="speaker-name">Sarah Jenkins, Chief Talent Officer at InnovateGov</span>
+                                </div>
+                            </div>
+                            <button class="calendar-btn" title="Add to Calendar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><line x1="12" y1="14" x2="12" y2="18"></line><line x1="10" y1="16" x2="14" y2="16"></line></svg>
+                            </button>
+                        </div>
+
+                        <!-- Networking -->
+                        <div class="agenda-row" data-track="networking">
+                            <div class="agenda-time">12:00 PM – 01:30 PM</div>
+                            <div class="agenda-details">
+                                <h3 class="session-title">Leadership Networking Lunch</h3>
+                                <p class="session-desc">Connect with industry peers, share insights, and discuss collaborative opportunities over lunch.</p>
+                            </div>
+                            <button class="calendar-btn" title="Add to Calendar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><line x1="12" y1="14" x2="12" y2="18"></line><line x1="10" y1="16" x2="14" y2="16"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Sessions -->
+                    <div class="agenda-day" id="day-2">
+                        <!-- Keynote -->
+                        <div class="agenda-row keynote" data-track="keynote">
+                            <div class="agenda-time">09:30 AM – 10:30 AM</div>
+                            <div class="agenda-details">
+                                <span class="featured-badge">Featured Keynote</span>
+                                <h3 class="session-title">AI and the Future of HR Analytics</h3>
+                                <p class="session-desc">How artificial intelligence is reshaping talent acquisition, performance management, and predictive workforce planning.</p>
+                                <div class="session-speaker">
+                                    <div class="speaker-avatar">D</div>
+                                    <span class="speaker-name">David Chen, VP of Analytics at TechTalent</span>
+                                </div>
+                            </div>
+                            <button class="calendar-btn" title="Add to Calendar">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><line x1="12" y1="14" x2="12" y2="18"></line><line x1="10" y1="16" x2="14" y2="16"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agenda-footer">
+                    <span>Ready to join?</span>
+                    <button class="btn btn-solid btn-register-now" id="agenda-register-btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const regModal = document.getElementById('registration-modal');
+            const openRegBtns = [document.getElementById('register-btn'), document.getElementById('agenda-register-btn')];
+            const closeRegBtn = document.getElementById('close-modal');
+
+            const agendaModal = document.getElementById('agenda-modal');
+            const openAgendaBtn = document.getElementById('view-agenda-btn');
+            const closeAgendaBtn = document.getElementById('close-agenda');
+
+            let regModalTriggered = false;
+
+            const showRegModal = () => {
+                if (!regModal.classList.contains('active')) {
+                    regModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    regModalTriggered = true;
+                }
+            };
+
+            const closeRegModal = () => {
+                regModal.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            openRegBtns.forEach(btn => {
+                if (btn) {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if (agendaModal.classList.contains('active')) {
+                            agendaModal.classList.remove('active');
+                        }
+                        showRegModal();
+                    });
+                }
+            });
+
+            if (closeRegBtn) {
+                closeRegBtn.addEventListener('click', closeRegModal);
+            }
+
+            regModal.addEventListener('click', (e) => {
+                if (e.target === regModal) closeRegModal();
+            });
+
+            // Agenda Modal Logic
+            const showAgendaModal = () => {
+                agendaModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeAgendaModal = () => {
+                agendaModal.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            if (openAgendaBtn) {
+                openAgendaBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showAgendaModal();
+                });
+            }
+
+            if (closeAgendaBtn) {
+                closeAgendaBtn.addEventListener('click', closeAgendaModal);
+            }
+
+            agendaModal.addEventListener('click', (e) => {
+                if (e.target === agendaModal) closeAgendaModal();
+            });
+
+            // Smart Triggers for Registration Modal
+            // 1. Exit Intent
+            document.addEventListener('mouseleave', (e) => {
+                if (e.clientY <= 0 && !regModalTriggered) {
+                    showRegModal();
+                }
+            });
+
+            // 2. Scroll Trigger (50%)
+            window.addEventListener('scroll', () => {
+                if (!regModalTriggered) {
+                    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                    if (scrollPercent > 50) {
+                        showRegModal();
+                    }
+                }
+            });
+
+            // 3. Time Delay (25s)
+            setTimeout(() => {
+                if (!regModalTriggered) {
+                    showRegModal();
+                }
+            }, 25000);
+
+            // Agenda Logic (Tabs & Filters)
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const agendaDays = document.querySelectorAll('.agenda-day');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const dayId = btn.getAttribute('data-day');
+                    agendaDays.forEach(day => {
+                        day.classList.remove('active');
+                        if (day.id === dayId) {
+                            day.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const agendaRows = document.querySelectorAll('.agenda-row');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filter = btn.getAttribute('data-filter');
+                    agendaRows.forEach(row => {
+                        if (filter === 'all' || row.getAttribute('data-track') === filter) {
+                            row.style.display = 'flex';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            const searchInput = document.getElementById('agenda-search');
+            searchInput.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                agendaRows.forEach(row => {
+                    const text = row.innerText.toLowerCase();
+                    if (text.includes(term)) {
+                        row.style.display = 'flex';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
