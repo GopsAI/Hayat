@@ -262,6 +262,7 @@ a {
 .footer-cta {
   background: transparent;
   border-top: 1px solid var(--white-15);
+  text-align: center;
 }
 
 .eyebrow {
@@ -279,7 +280,7 @@ a {
   font-weight: 700;
   line-height: 1.2;
   color: var(--white);
-  margin: 0 0 28px;
+  margin: 0 auto 28px;
   max-width: 46rem;
 }
 
@@ -297,6 +298,7 @@ a {
   flex-direction: column;
   gap: 20px;
   max-width: 44rem;
+  margin: 0 auto;
 }
 
 .about-copy p {
@@ -316,6 +318,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
   gap: 24px;
+  justify-content: center;
 }
 
 .theme-card {
@@ -373,7 +376,7 @@ a {
   line-height: 1.8;
   color: var(--white-70);
   max-width: 44rem;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /* ---------- Footer CTA ---------- */
@@ -801,10 +804,123 @@ a {
   display: none;
   flex-direction: column;
   gap: 16px;
+  animation: fadeIn 0.3s ease;
 }
 
 .agenda-day.active {
   display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- CTA Popup ---------- */
+.cta-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s var(--ease);
+  padding: 20px;
+}
+
+.cta-popup-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cta-popup-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-popup-overlay.active .cta-popup-container {
+  transform: scale(1);
+}
+
+.cta-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.cta-popup-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.cta-popup-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.cta-popup-image {
+  width: 100%;
+  display: block;
+}
+
+.cta-popup-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.cta-popup-content {
+  padding: 24px;
+  text-align: center;
+  background: #111;
+}
+
+.cta-popup-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #dc2626;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.cta-popup-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
 }
 
 .agenda-row {
